@@ -11,6 +11,7 @@
         <th>Photo</th>
         <th>Caption</th>
         <th>User</th>
+        <th>Photo Id</th>
       </tr>
 
       <% @user.liked_photos.each do |liked_photos| %>
@@ -18,7 +19,7 @@
         <td><img src="<%= liked_photos.image %>" class="img-responsive" width="400"></td>
         <td><%= liked_photos.caption %></td>
         <td><%= liked_photos.user_id %></td>
-
+        <td><%= liked_photos.id %></td>
       </tr>
       <% end %>
     </table>

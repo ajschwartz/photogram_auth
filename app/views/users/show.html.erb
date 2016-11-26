@@ -19,11 +19,13 @@
       <tr>
         <th>Photo</th>
         <th>Caption</th>
+        <th>Photo Id</th>
       </tr>
       <% @user.photos.each do |photo| %>
       <tr>
         <td><img src="<%= photo.image %>" class="img-responsive" width="300"></td>
         <td><%= photo.caption %></td>
+        <td><%= photo.id %></td>
       </tr>
       <% end %>
     </table>
